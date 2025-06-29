@@ -97,7 +97,7 @@ def test_agent():
 
     assert output["profit"] == -200, "Profit calculation failed"
     assert "Negative profit" in output["alerts"], "Missing alert"
-    print("✅ Test passed!")
+    print("Test passed")
     print(json.dumps(output, indent=2))
 
 if __name__ == "__main__":
@@ -114,5 +114,5 @@ if __name__ == "__main__":
     print("Sample run output:")
     print(json.dumps(output["output"], indent=2))
     
-    print("\nRunning test...")
+    print("\n test...")
     test_agent()
